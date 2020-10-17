@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  line-height: 1.5;
+  background-color: #e1e1e1;
+  font-family: "Roboto", sans-serif;
+}
+
+
+button {
+  all: unset;
+  position: relative;
+  font-size: 30px;
+  color: #7575a1;
+  bottom: 2.4rem;
+  float: right;
+  right: 1.5rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+main {
+  width: 100%;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-add {
+  height: 65px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.top-add div {
+  position: relative;
+  color: #757575;
+  height: 100%;
+  
+}
+.top-add input {
+  border-radius: 5px;
+}
+
+
+
+input[type="text"] {
+  width: 100%;
+    padding-left: 2.2rem;
+    line-height: 1.5;
+    padding-top: 0.90rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+}
+
+.task-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.task-card .task-header {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-top: 24px;
+}
+
+.task-card .task-done {
+  background-color: #bdb8ee;
+  border-radius: 5px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.task-card .task-title {
+  padding-left: 34px;
+  padding-right: 20px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.task-card .task-title input {
+  color: #000000;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: inherit;
+  line-height: 48px;
+  padding: 6px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-card .task-title i {
+  margin-left: 5px;
+}
+
+.task-card .task-icon {
+  width: 24px;
+  color: #4a90e2;
+  margin-right: 32px;
+}
+
+.task-card .all-tasks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-card .all-tasks .task-msg {
+  margin-top: 8px;
+  font-size: 24px;
+  font-style: italic;
+  color: #7e7e7e;;
+  display: flex;
+}
+
+.task-card .all-tasks .task-msg-right {
+  margin-top: 8px;
+  font-size: 24px;
+  font-style: italic;
+  color: #7e7e7e;;
+  margin-right: 7px;
 }
